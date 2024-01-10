@@ -13,5 +13,6 @@ class AppRouter extends _$AppRouter {
   List<AutoRoute> get routes => [
         AutoRoute(page: SplashScreenRoute.page, path: '/', initial: true),
         AutoRoute(page: OnboardScreenRoute.page),
+        AutoRoute(page: AuthScreenRoute.page),
       ];
 }
