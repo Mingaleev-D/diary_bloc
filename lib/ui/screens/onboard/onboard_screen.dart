@@ -1,7 +1,9 @@
 import 'package:auto_route/annotations.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:diary_bloc/core/constants/app_assets.dart';
 import 'package:diary_bloc/core/constants/app_colors.dart';
 import 'package:diary_bloc/core/constants/app_strings.dart';
+import 'package:diary_bloc/ui/routes/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
@@ -35,13 +37,13 @@ class _OnboardScreenState extends State<OnboardScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset(AppAssets.icDiary, height: 28.h, width: 28.w),
+                    Image.asset(AppAssets.gitLogo, height: 28.h, width: 28.w),
                     const Gap(10),
                     Text(
-                      'Diary_bloc',
+                      AppStrings.gitProfile,
                       style: TextStyle(
                         color: AppColors.primaryColor,
-                        fontSize: 28.sp,
+                        fontSize: 20.sp,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -66,7 +68,8 @@ class _OnboardScreenState extends State<OnboardScreen> {
                 ).expand(),
                 SizedBox(height: 61.h),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () =>
+                      AutoRouter.of(context).push(const AuthScreenRoute()),
                   style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.primaryColor,
                       shape: RoundedRectangleBorder(
