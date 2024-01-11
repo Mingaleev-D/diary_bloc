@@ -1,8 +1,10 @@
 import 'package:animation_wrappers/animations/faded_scale_animation.dart';
 import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
+import 'package:diary_bloc/core/constants/app_assets.dart';
 import 'package:diary_bloc/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 
 import '../../routes/app_router.dart';
@@ -37,13 +39,13 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/images/ic_diary.png', height: 60, width: 60),
+              Image.asset(AppAssets.icDiary, height: 60.h, width: 60.w),
               const Gap(10),
-              const Text(
+              Text(
                 'Diary_bloc',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 36,
+                  fontSize: 36.sp,
                   fontWeight: FontWeight.bold,
                 ),
               ),

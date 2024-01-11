@@ -1,0 +1,12 @@
+export 'package:diary_bloc/ui/screens/add_posts/add_posts_screen.dart';
+export 'package:diary_bloc/ui/screens/profile/profile_screen.dart';
+export 'package:diary_bloc/ui/screens/home/home_details/home_details_screen.dart';
+export 'package:diary_bloc/ui/screens/tags/tags_screen.dart';
+export 'package:diary_bloc/ui/screens/category/gategory_screen.dart';
+export 'package:diary_bloc/ui/screens/home/home_screen.dart';
+export 'package:diary_bloc/ui/screens/general/general.dart';
+export 'package:diary_bloc/ui/screens/auth/register/register_screen.dart';
+export 'package:diary_bloc/ui/screens/auth/login/login_screen.dart';
+export 'package:diary_bloc/ui/screens/auth/auth_screen.dart';
+export 'package:diary_bloc/ui/screens/onboard/onboard_screen.dart';
+export 'package:diary_bloc/ui/screens/splash/splash_screen.dart';
