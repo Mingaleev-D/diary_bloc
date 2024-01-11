@@ -8,4 +8,5 @@ class AppAssets {
   static const String onBackGirl = 'assets/images/ic_back_girl.png';
   static const String gitLogo = 'assets/images/git_logo.png';
   static const String groupLogo = 'assets/images/group_logo.png';
+  static const String imageImage1 = 'assets/images/image_image1.jpg';
 }
