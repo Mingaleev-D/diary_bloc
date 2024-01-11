@@ -33,6 +33,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const General(),
       );
     },
+    HomeDetailsScreenRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const HomeDetailsScreen(),
+      );
+    },
     HomeScreenRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -49,6 +55,12 @@ abstract class _$AppRouter extends RootStackRouter {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const OnboardScreen(),
+      );
+    },
+    ProfileScreenRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const ProfileScreen(),
       );
     },
     RegisterScreenRoute.name: (routeData) {
@@ -115,6 +127,20 @@ class GeneralRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [HomeDetailsScreen]
+class HomeDetailsScreenRoute extends PageRouteInfo<void> {
+  const HomeDetailsScreenRoute({List<PageRouteInfo>? children})
+      : super(
+          HomeDetailsScreenRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'HomeDetailsScreenRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
 /// [HomeScreen]
 class HomeScreenRoute extends PageRouteInfo<void> {
   const HomeScreenRoute({List<PageRouteInfo>? children})
@@ -152,6 +178,20 @@ class OnboardScreenRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'OnboardScreenRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [ProfileScreen]
+class ProfileScreenRoute extends PageRouteInfo<void> {
+  const ProfileScreenRoute({List<PageRouteInfo>? children})
+      : super(
+          ProfileScreenRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ProfileScreenRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

@@ -1,5 +1,7 @@
 import 'package:auto_route/annotations.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:diary_bloc/core/constants/app_assets.dart';
+import 'package:diary_bloc/ui/routes/app_router.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -40,12 +42,16 @@ class _HomeScreenState extends State<HomeScreen> {
               itemBuilder: (context, index) {
                 return Row(
                   children: [
-                    Image.asset(
-                      AppAssets.imageImage1,
-                      height: 100.h,
-                      width: 150.w,
-                      fit: BoxFit.cover,
-                    ).cornerRadius(20),
+                    GestureDetector(
+                      onTap: () => AutoRouter.of(context)
+                          .push(const HomeDetailsScreenRoute()),
+                      child: Image.asset(
+                        AppAssets.imageImage1,
+                        height: 100.h,
+                        width: 150.w,
+                        fit: BoxFit.cover,
+                      ).cornerRadius(20),
+                    ),
                     10.w.widthBox,
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

@@ -9,4 +9,5 @@ class AppAssets {
   static const String gitLogo = 'assets/images/git_logo.png';
   static const String groupLogo = 'assets/images/group_logo.png';
   static const String imageImage1 = 'assets/images/image_image1.jpg';
+  static const String placeholder = 'assets/images/placeholder.jpg';
 }

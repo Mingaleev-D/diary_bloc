@@ -1,3 +1,6 @@
+export 'package:diary_bloc/ui/screens/add_posts/add_posts_screen.dart';
+export 'package:diary_bloc/ui/screens/profile/profile_screen.dart';
+export 'package:diary_bloc/ui/screens/home/home_details/home_details_screen.dart';
 export 'package:diary_bloc/ui/screens/tags/tags_screen.dart';
 export 'package:diary_bloc/ui/screens/category/gategory_screen.dart';
 export 'package:diary_bloc/ui/screens/home/home_screen.dart';

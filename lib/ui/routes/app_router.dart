@@ -20,5 +20,6 @@ class AppRouter extends _$AppRouter {
         AutoRoute(page: HomeScreenRoute.page),
         AutoRoute(page: GategoryScreenRoute.page),
         AutoRoute(page: TagsScreenRoute.page),
+        AutoRoute(page: HomeDetailsScreenRoute.page),
       ];
 }

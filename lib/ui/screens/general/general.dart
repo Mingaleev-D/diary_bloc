@@ -43,15 +43,12 @@ class _GeneralState extends State<General> {
       ),
     ];
 
-    List<Widget> _screens = [
+    List<Widget> _screens = const [
       HomeScreen(),
       GategoryScreen(),
-      Scaffold(
-        body: Center(
-          child: Text('add'),
-        ),
-      ),
+      AddPostsScreen(),
       TagsScreen(),
+      ProfileScreen(),
     ];
     return Scaffold(
       body: _screens.elementAt(visit),
